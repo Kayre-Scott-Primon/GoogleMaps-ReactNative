@@ -8,6 +8,7 @@ import Home from "./screens/home";
 import Splash from "./screens/splash";
 import BaseMap from "./screens/baseMap";
 import UserLocation from "./screens/userLocation";
+import Layers from "./screens/layers";
 
 const Stack = createNativeStackNavigator();
 
@@ -39,6 +40,14 @@ const App = () => (
             <Stack.Screen 
                 name="UserLocation" 
                 component={UserLocation} 
+                options={{
+                    headerStyle:{ backgroundColor: '#0ad'},
+                    headerTintColor: '#fff'
+                    }}
+                />
+            <Stack.Screen 
+                name="Layers" 
+                component={Layers} 
                 options={{
                     headerStyle:{ backgroundColor: '#0ad'},
                     headerTintColor: '#fff'
