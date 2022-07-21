@@ -57,7 +57,7 @@ function Home({navigation}){
                     <TouchableOpacity style={styles.buttonTrack} onPress={() => {navigation.navigate('Layers')}}>
                         <Text style={styles.buttonTextTrack}>Layers</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity style={styles.buttonTrack} onPress={() => {navigation.navigate('MarkPoint')}}>
+                    <TouchableOpacity style={styles.buttonTrack} onPress={() => {navigation.navigate('Image')}}>
                         <Text style={styles.buttonTextTrack}>Show image</Text>
                     </TouchableOpacity>
                 </View>

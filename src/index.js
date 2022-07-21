@@ -4,11 +4,12 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { View } from 'react-native'
 
 // pages
-import Home from "./screens/home";
-import Splash from "./screens/splash";
-import BaseMap from "./screens/baseMap";
-import UserLocation from "./screens/userLocation";
-import Layers from "./screens/layers";
+import Home from "./screens/home"
+import Image from './screens/image'
+import Splash from "./screens/splash"
+import Layers from "./screens/layers"
+import BaseMap from "./screens/baseMap"
+import UserLocation from "./screens/userLocation"
 
 const Stack = createNativeStackNavigator();
 
@@ -48,6 +49,14 @@ const App = () => (
             <Stack.Screen 
                 name="Layers" 
                 component={Layers} 
+                options={{
+                    headerStyle:{ backgroundColor: '#0ad'},
+                    headerTintColor: '#fff'
+                    }}
+                />
+            <Stack.Screen 
+                name="Image" 
+                component={Image} 
                 options={{
                     headerStyle:{ backgroundColor: '#0ad'},
                     headerTintColor: '#fff'
